@@ -8,12 +8,33 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+          "gray-100":"#FAF9F8",
+          "primary-100":"#FDFDFC",
+          "Primary-200":"#CDCBC9",
       },
+      
+      backgroundImage: {
+        "gradient-btn": "linear-gradient(94deg, #42A9F4 22.48%, #3BD6E0 77.53%)",
+        "gradient-home": "linear-gradient(90deg, #53B7FF 70%, #39E8DD 100%)",
+      },
+      content: {
+        yellowEllipse: "url('./assets/yellowHalfFull.svg')",
+        yellowFull: "url('./assets/yellowFull.svg')",
+        yellowHalfFull: "url('./assets/yellowHalfFull.svg')",
+        evolvetext: "url('./assets/EvolveText.png')",
+        abstractwaves: "url('./assets/AbstractWaves.png')",
+        sparkles: "url('./assets/Sparkles.png')",
+        circles: "url('./assets/Circles.png')",
+
+      }
     },
+    screens: {
+      xxs: "340px",
+      xs: "480px",
+      sm: "768px",
+      md:"1060px"
+    }
   },
   plugins: [],
 };
