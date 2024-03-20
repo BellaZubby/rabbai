@@ -29,18 +29,18 @@ const data: Array<HeroSlideType> = [
 const PrevArrow: React.FC<onClickType> = ({ onClick }) => {
     return (
         <div
-            className="slick-arrow slick-Prev prevarrow"
+            className="slick-arrow slick-prev"
             onClick={onClick}>
-                <Image src={prev} alt='prev-btn'></Image>
+                <Image src={prev} alt='prev-btn' className=''></Image>
         </div>);
 };
 
 //  for nextArrow
 const NextArrow: React.FC<onClickType> = ({ onClick }) => {
     return (<div
-        className="slick-arrow slick-Next nextarrow"
+        className="slick-arrow slick-next"
         onClick={onClick}>
-            <Image src={next} alt='next-btn'></Image>
+            <Image src={next} alt='next-btn' className=''></Image>
         </div>);
 };
 
@@ -63,7 +63,7 @@ const HeroMain = () => {
 
   return (
     <>
-    <div className=' bg-gradient-btn w-[90%] mx-auto h-[520px] relative top-12 rounded-lg left-2'>
+    <div className=' bg-gray-300 w-[90%] mx-auto h-auto relative top-12 rounded-lg left-2'>
 
         <Slider {...settings}>
             {

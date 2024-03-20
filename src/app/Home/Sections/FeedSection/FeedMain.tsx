@@ -58,18 +58,18 @@ const Feed: Array<FeedsType> = [
 const PrevArrow: React.FC<onClickType> = ({ onClick }) => {
     return (
         <div
-            className="slick-arrow slick-prev prevarrow"
+            className="slick-arrow slick-back"
             onClick={onClick}>
-                <Image src={prev} alt='prev' className=''></Image>
+                <Image src={prev} alt='prev'></Image>
         </div>);
 };
 
 //  for nextArrow
 const NextArrow: React.FC<onClickType> = ({ onClick }) => {
     return (<div
-        className="slick-arrow slick-next nextarrow"
+        className="slick-arrow slick-front"
         onClick={onClick}> 
-            <Image src={next} alt='next' className=''></Image>
+            <Image src={next} alt='next'></Image>
         </div>);
 };
 
@@ -84,7 +84,7 @@ const FeedMain = () => {
         centerPadding: "90px",
         slidesToShow: 2,
         speed: 500,
-        dotsClass: "slick-dots slick-thumb",
+        dotsClass: "slick-Dots slick-thumb",
         dots: true,
         // for append dots
         appendDots: (dots: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined) => (
@@ -92,23 +92,6 @@ const FeedMain = () => {
               <ul style={{color: "red"}}> {dots} </ul>
             </div>
           ),
-        // customPaging
-       customPaging: (i: number) => (
-      <div
-        style={{
-        //   width: "30px",
-          color: "blue",
-          border: "1px blue solid"
-        }}
-      >
-        {
-
-        }
-        
-
-        
-      </div>
-    )
       };
 
   return (
