@@ -4,7 +4,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 type Props = {
-    image: StaticImageData
+    image: StaticImageData,
 }
 
 
@@ -13,7 +13,7 @@ const Hero = ({image}: Props) => {
   return (
     <div>
         <div>
-            <div className='flex items-center justify-center flex-row-reverse'>
+            <div className='flex items-center justify-between flex-row-reverse mx-auto rounded-lg bg-[#cac9c8] p-16 w-[99%]'>
               <div className='basis-1/2'>
                 <Image src={image} alt={'photo'} className=''></Image>
               </div>

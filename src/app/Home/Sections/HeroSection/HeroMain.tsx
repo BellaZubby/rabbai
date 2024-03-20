@@ -48,22 +48,26 @@ const NextArrow: React.FC<onClickType> = ({ onClick }) => {
 const HeroMain = () => {
 
     const settings = {
+        className: "center",
+        centerMode: true,
+        centerPadding: "60px",
         dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1,
+        // slidesToScroll: 1,
         prevArrow: <PrevArrow />,
         nextArrow: <NextArrow />,
         autoplay: true,
         autoplaySpeed: 2000,
-        cssEase: 'linear'
+
+        // cssEase: 'linear'
     };
 
 
   return (
     <>
-    <div className=' bg-gray-300 w-[90%] mx-auto h-auto relative top-12 rounded-lg left-2'>
+    <div className='w-full h-auto relative top-12 rounded-lg'>
 
         <Slider {...settings}>
             {

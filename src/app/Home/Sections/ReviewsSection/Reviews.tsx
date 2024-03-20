@@ -56,7 +56,7 @@ const Reviews = (props: Props) => {
         slidesToShow: 1,
         slidesToScroll: 1,
         nextArrow: <NextArrow />,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 2000,
         cssEase: 'linear'
     };
