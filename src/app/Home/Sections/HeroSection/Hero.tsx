@@ -15,9 +15,9 @@ const Hero = ({image}: Props) => {
         <div>
             <div className='flex items-center justify-between flex-row-reverse mx-auto rounded-lg bg-[#cac9c8] p-16 w-[99%]'>
               <div className='basis-1/2'>
-                <Image src={image} alt={'photo'} className=''></Image>
+                <Image src={image} alt={'photo'} className='basis-[70%]'></Image>
               </div>
-              <div className='basis-[30%] text-[#313130] mt-14'>
+              <div className='basis-[40%] text-[#313130] mt-14'>
                  <div className='w-full'>
                     <p className='text-[45px]'>Redefining</p>
                     <p className='text-[45px] font-bold'>Success <span className='font-normal'>in</span></p>

@@ -67,7 +67,7 @@ const HeroMain = () => {
 
   return (
     <>
-    <div className='w-full h-auto relative top-12 rounded-lg'>
+    <div className='w-full h-auto relative top-12'>
 
         <Slider {...settings}>
             {
