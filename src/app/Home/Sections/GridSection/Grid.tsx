@@ -21,7 +21,7 @@ const Grid = (props: Props) => {
             }}
             >
                 <Image src={grid} alt='gridImage' className='rounded-lg'></Image>
-              <div className='bg-[#FAF9F8] w-[102%] h-[12px] absolute top-[50%] -translate-y-[50%] left-[-3.5px]'></div>
+              <div className='bg-[#FAF9F8] w-[100%] h-[12px] absolute top-[50%] -translate-y-[50%]'></div>
               <div className='bg-[#FAF9F8] w-[12px] h-[49.1%] absolute left-[45%] -translate-x-[50%] top-0'></div>
               <div  className='bg-[#FAF9F8] w-[12px] h-[49.1%] absolute right-[45%] -translate-x-[50%] bottom-0' ></div>
             </motion.div>

@@ -9,9 +9,9 @@ export default function Navbar() {
   // const isAboveMediumScreens = useMediaQuery("(min-width:1060px)")
 
     return (
-      <section>
+      <>
         <div className='w-full fixed z-[40]'>
-          <div className='w-5/6 mx-auto bg-[#FFFFFF] shadow-lg flex items-center justify-center gap-7 rounded-md mt-6 p-3'>
+          <div className='w-[90%] mx-auto bg-[#FFFFFF] shadow-lg flex items-center justify-center gap-7 rounded-md mt-6 p-3'>
             <Image src={logo} alt={"logo"}></Image>
             <div className='flex items-center gap-4 text-[16px] cursor-pointer'>
               <a className='active:font-semibold hover:font-semibold '>Home</a>
@@ -30,6 +30,6 @@ export default function Navbar() {
             </div>
           </div>
         
-      </section>
+      </>
     );
   }
