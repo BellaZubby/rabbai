@@ -19,6 +19,7 @@ import prev from '@/app/assets/prev.svg'
 import Slider from 'react-slick'
 import './prev-next.css'
 import './slick.css'
+import './hero.css'
 
 
 // leftArrow
@@ -45,7 +46,7 @@ const Hero = () => {
   const settings = {
     className: "center",
     centerMode: true,
-    centerPadding: "0px",
+    centerPadding: "10px",
     dots: true,
     infinite: true,
     speed: 500,
@@ -78,12 +79,12 @@ const Hero = () => {
             <p className='text-justify text-xs w-[42%]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur et hic aut, perspiciatis, voluptatem quas voluptatum necessitatibus inventore fugiat voluptatibus cum facilis? Eligendi nesciunt eaque, perspiciatis ipsam quaerat laudantium, 
               ut at cupiditate sint, fugit praesentium corrupti! Ducimus consectetur ipsa eveniet.</p>
             <motion.button 
-              className='bg-gradient-btn px-28 py-3 rounded-md text-[#FFF] font-semibold mt-5'
+              className='px-28 py-3 rounded-md text-[#FFF] font-semibold mt-5'
+              style={{background: 'linear-gradient(94deg, #42A9F4 22.48%, #3BD6E0 77.53%)'}}
               whileHover={{
-                scale: 1.1,
-                origin: 0,
+                background: "linear-gradient(110deg, #67A1FF 5.2%, #3BD6E0 40.48%, #4285F4 77.53%)",
                 transition: {
-                    duration: 0.3,
+                    duration: 2.0,
                 }
             }}
               >
@@ -96,7 +97,7 @@ const Hero = () => {
       </div> 
 
       {/* second slide */}
-       <div className='bg-gradient-home w-[1360px] h-[562px] rounded-xl mt-12'>
+       <div className='bg-gradient-home w-[1360px] h-[562px] rounded-xl mt-12 ml-1'>
           <div className='relative'>
             <Image src={image2} alt='firstSlideImage' className='w-[770px] h-[650px] object-contain absolute right-8 z-[20]'></Image>
             <Image src={halfGradient} alt='halfYellow' className='absolute top-0 right-7'></Image>
@@ -111,18 +112,11 @@ const Hero = () => {
             <h1 className='text-[55px] font-bold'>Every Click!</h1>
             <p className='text-justify text-xs w-[42%]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur et hic aut, perspiciatis, voluptatem quas voluptatum necessitatibus inventore fugiat voluptatibus cum facilis? Eligendi nesciunt eaque, perspiciatis ipsam quaerat laudantium, 
               ut at cupiditate sint, fugit praesentium corrupti! Ducimus consectetur ipsa eveniet.</p>
-            <motion.button 
-              className='bg-gradient-btn px-28 py-3 rounded-md text-[#FFF] font-semibold mt-5'
-              whileHover={{
-                scale: 1.1,
-                origin: 0,
-                transition: {
-                    duration: 0.3,
-                }
-            }}
-              >
+            <button 
+              className='bg-gradient-btn px-28 py-3 rounded-md text-[#FFF] font-semibold mt-5 hover:bg-gradient-btnHover'
+            >
               Get Started
-            </motion.button>
+            </button>
 
           </div>
 
@@ -148,12 +142,12 @@ const Hero = () => {
             <p className='text-justify text-xs w-[42%]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur et hic aut, perspiciatis, voluptatem quas voluptatum necessitatibus inventore fugiat voluptatibus cum facilis? Eligendi nesciunt eaque, perspiciatis ipsam quaerat laudantium, 
               ut at cupiditate sint, fugit praesentium corrupti! Ducimus consectetur ipsa eveniet.</p>
             <motion.button 
-              className='bg-gradient-btn px-28 py-3 rounded-md text-[#FFF] font-semibold mt-5'
+              className='third-btn px-28 py-3 rounded-md text-[#FFF] font-semibold mt-5'
+             style={{background: 'linear-gradient(94deg, #42A9F4 22.48%, #3BD6E0 77.53%)'}}
               whileHover={{
-                scale: 1.1,
-                origin: 0,
+                background: "linear-gradient(110deg, #67A1FF 5.2%, #3BD6E0 40.48%, #4285F4 77.53%)",
                 transition: {
-                    duration: 0.3,
+                    duration: 2.0,
                 }
             }}
             >

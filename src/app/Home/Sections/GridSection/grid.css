@@ -1,0 +1,19 @@
+button {
+    transition: background-image 0.4s ease-in-out
+}
+.gridMain:hover button {
+    background-image: linear-gradient(94deg, #42A9F4 22.48%, #3BD6E0 77.53%);
+
+}
+.grid-container {
+    overflow: hidden;
+    border-radius: 12px;
+}
+.grid-img {
+    transition: transform 0.4s ease-in-out;
+}
+
+.gridMain:hover .grid-img {
+    transform: scale(1.2);
+    border-radius: 12px;
+}

@@ -2,31 +2,21 @@
 import { StaticImageData } from 'next/image'
 import React from 'react'
 import  Image from 'next/image'
-import { motion } from 'framer-motion'
+import './featured.css'
 
 type Props = {
-    image: StaticImageData;
+    image: StaticImageData
     title: string;
     description: string
 }
 
 const Featured = ({image, title, description}: Props) => {
   return (
-    <div>
-        <div className='mt-6'>
-            <motion.div
-            className='w-[95%] mx-auto'
-                whileHover={{
-                    scale: 1.1,
-                    origin: 0,
-                    transition: {
-                        duration: 0.3,
-                    }
-                }}
-                
-            >
-                <Image src={image} alt='logo'></Image>
-            </motion.div>
+    <>
+        <div 
+            className='mt-6 featuredMain'
+        >
+            <div className='image-container'><Image src={image} alt='logo' className='zoom-img'></Image></div>
             <div className='mt-5'>
                 <h1 className='font-bold mb-3'>{title}</h1>
                 <p>{description}</p>
@@ -36,7 +26,7 @@ const Featured = ({image, title, description}: Props) => {
                 </button>
             </div>
         </div>
-    </div>
+    </>
   )
 }
 

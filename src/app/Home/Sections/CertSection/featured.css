@@ -1,0 +1,25 @@
+button {
+    transition: background-color 0.8s ease-in-out;
+}
+.featuredMain:hover button {
+    background-color:#07CA9E;
+    color: white;
+    border: none;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.zoom-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.featuredMain:hover .zoom-img {
+    transform: scale(1.2);
+}
