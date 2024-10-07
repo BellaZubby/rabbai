@@ -15,7 +15,7 @@ export interface FeaturedType {
    
 }
 export interface FeedsType {
-    image: StaticImageData;
+    image: StaticImageData
     title: string;
     subtitle: string;
     subjects: string;

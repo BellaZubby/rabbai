@@ -16,7 +16,9 @@ const config: Config = {
       
       backgroundImage: {
         "gradient-btn": "linear-gradient(94deg, #42A9F4 22.48%, #3BD6E0 77.53%)",
-        "gradient-home": "linear-gradient(90deg, #53B7FF 70%, #39E8DD 100%)",
+        "gradient-home": "linear-gradient(90deg, rgba(83, 183, 255, 0.50) 28.77%, rgba(57, 232, 221, 0.50) 86.89%)",
+        "gradient-btnHover": "linear-gradient(110deg, #67A1FF 5.2%, #3BD6E0 40.48%, #4285F4 77.53%)"
+        
       },
       content: {
         yellowEllipse: "url('./assets/yellowHalfFull.svg')",

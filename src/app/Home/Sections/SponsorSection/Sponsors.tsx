@@ -28,14 +28,16 @@ const sponsors: Array<SponsorsType> = [
 const Sponsors = (props: Props) => {
   return (
     <section className='mt-12 w-full'>
-        <h1 className='text-center text-[#313130] font-bold text-[32px]'>Sponsors</h1>
-        <div className='flex items-center justify-center gap-9 mt-12'>
+        <h1 className='text-center text-[#313130] font-bold text-[32px] mb-16'>Sponsors</h1>
+        <div className='w-full h-[1.5px] bg-[#CDCBC9]'></div>
+        <div className='flex items-center justify-center gap-9 py-9'>
             {
                 sponsors.map((sponsor, index) => {
                     return <SponsorsList key={index} image={sponsor.image}/>
                 })
             }
         </div>
+        <div className='w-full h-[1.5px] bg-[#CDCBC9]'></div>
     </section>
   )
 }

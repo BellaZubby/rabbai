@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import Navbar from './Sections/NavSection/Navbar'
-import HeroMain from './Sections/HeroSection/HeroMain'
+import Hero from './Sections/HeroSection/Hero'
 import StorySection from './Sections/StorySection/StorySection'
 import Certification from './Sections/CertSection/Certification'
 import FeedMain from './Sections/FeedSection/FeedMain'
@@ -11,13 +11,14 @@ import Sponsors from './Sections/SponsorSection/Sponsors'
 import Grid from './Sections/GridSection/Grid'
 import Update from './Sections/UpdateSection/Update'
 import Footer from './Sections/FooterSection/Footer'
+
 type Props = {}
 
 const HomePage = (props: Props) => {
   return (
     <div>
         <Navbar/>
-        <HeroMain/>
+        <Hero/>
         <StorySection/>
         <Certification/>
         <FeedMain/>

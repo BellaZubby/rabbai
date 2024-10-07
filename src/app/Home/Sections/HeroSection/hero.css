@@ -1,0 +1,20 @@
+/* .third-btn {
+    background:linear-gradient(94deg, #42A9F4 22.48%, #3BD6E0 77.53%);
+}
+
+@keyframes gradient_hover {
+    from {
+        background:linear-gradient(-120deg, #67A1FF 5.2%, #3BD6E0 40.48%, #4285F4 77.53%);
+    }
+    to {
+        background:linear-gradient(120deg, #67A1FF 5.2%, #3BD6E0 40.48%, #4285F4 77.53%);
+    }
+}
+
+
+
+.third-btn:hover {
+    animation-name: gradient_hover;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+} */
